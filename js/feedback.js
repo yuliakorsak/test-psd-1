@@ -26,8 +26,15 @@ const inputs = popup.querySelectorAll('input');
 inputs.forEach(input => input.addEventListener('click', () => {
   if (input.classList.contains('feedback__input_error')) {
     input.classList.remove('feedback__input_error')
-    input.value = '';
+    input.placeholder = '';
   }
+}));
+
+inputs.forEach(input => input.addEventListener('invalid', (e) => {
+  e.preventDefault();
+  input.classList.add('feedback__input_error');
+  input.placeholder = input.validationMessage;
+  input.value = '';
 }));
 
 function openPopup() {
@@ -47,10 +54,6 @@ function validate() {
   inputs.forEach(input => {
     if (!input.reportValidity()) {
       valid = false;
-      if (input.required && input.value === '') {
-        input.classList.add('feedback__input_error');
-        input.value = 'Поле обязательно для заполнения';
-      }
     }
   });
   if (valid) {

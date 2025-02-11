@@ -412,6 +412,9 @@ body {
 .feedback__input_error {
   border-color: #ff8383;
   box-shadow: inset 0 0 13px #e46a6a;
+}
+
+.feedback__input_error::placeholder {
   color: #dc7f7f;
   font-style: italic;
 }
