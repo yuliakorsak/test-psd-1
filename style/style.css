@@ -370,10 +370,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
   width: 466px;
   margin: 30px 20px;
-  padding: 34px 63px 26px;
+  padding: 35px 63px 26px;
   color: #535353;
   background-color: #ffffff;
 }
@@ -392,6 +392,7 @@ body {
 }
 
 .feedback__title {
+  margin-bottom: 10px;
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -401,9 +402,14 @@ body {
   text-align: center;
 }
 
+.feedback__label[for='feedback__message'] {
+  margin-top: 4px;
+}
+
 .feedback__input, .feedback__textarea {
   width: 340px;
   padding: 9px 14px;
+  margin-top: 3px;
   font-family: inherit;
   border: 1px solid #c3c3c3;
   border-radius: 2px;
@@ -425,6 +431,7 @@ body {
 
 .feedback__textarea {
   height: 142px;
+  margin-bottom: 3px;
   resize: none;
 }
 
