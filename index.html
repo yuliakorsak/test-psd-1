@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="inner">
+      <img src="img/logo.png" alt="Логотип компании" class="header__logo">
+      <section class="header__contacts">
+        <a class="header__phone" href="tel:+74997777777">+7(499) 777-77-77</a>
+        <a class="header__phone" href="tel:+74997777777">+7(499) 777-77-77</a>
+        <a class="header__feedback" href="#">Обратная связь</a>
+      </section>
+    </div>
+  </header>
+  <nav class="menu">
+    <ul class="menu-list">
+      <li class="menu-item"><a href="#">Главная</a></li>
+      <li class="menu-item"><a href="#">Каталог</a></li>
+      <li class="menu-item"><a href="#">Доставка и оплата</a></li>
+      <li class="menu-item"><a href="#">Прайс-лист</a></li>
+      <li class="menu-item"><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+  <aside class="slider" id="fadeSlider">
+    <div class="slider__slide"></div>
+    <div class="inner">
+      <div class="slider__button slider__button_prev"></div>
+      <div class="slider__button slider__button_next"></div>
+    </div>
+  </aside>
+  <main class="content inner">
+    <nav class="content__breadcrumbs">
+      <ul class="content__breadcrumbs-list">
+        <li class="content__breadcrumbs-item"><a href="#" class="content__breadcrumbs-link">Главная</a></li>
+        <li class="content__breadcrumbs-item"><a href="#" class="content__breadcrumbs-link">Каталог</a></li>
+        <li class="content__breadcrumbs-item">Бытовая техника</li>
+      </ul>
+    </nav>
+    <div class="content__catalog">
+      <nav class="content__leftblock">
+        <ul class="content__category-list">
+          <li class="content__category-item"><a class="content__category-link" href="#">Автомобили</a></li>
+          <li class="content__category-item">
+            <a class="content__category-link content__category-link_active" href="#">Бытовая техника</a>
+            <ul class="content__subcategory-list">
+              <li class="content__subcategory-item"><a
+                  class="content__subcategory-link content__subcategory-link_active" href="#">Микроволновки</a></li>
+              <li class="content__subcategory-item"><a class="content__subcategory-link" href="#">Холодильники</a></li>
+              <li class="content__subcategory-item"><a class="content__subcategory-link" href="#">Посудомоечные
+                  машины</a></li>
+              <li class="content__subcategory-item"><a class="content__subcategory-link" href="#">Чайники</a></li>
+            </ul>
+          </li>
+          <li class="content__category-item"><a class="content__category-link" href="#">Мобильная техника</a></li>
+          <li class="content__category-item"><a class="content__category-link" href="#">Компьютеры</a></li>
+          <li class="content__category-item"><a class="content__category-link" href="#">Одежда</a></li>
+          <li class="content__category-item"><a class="content__category-link" href="#">Недвижимость</a></li>
+        </ul>
+        <a href="#" class="content__pricelist-link" target="_blank">Прайс-лист</a>
+      </nav>
+      <div class="content__centerblock">
+        <section class="content__products">
+          <div class="content__card">
+            <img src="img/defaultphoto.jpg" alt="Фото товара" class="content__product-photo">
+            <h3 class="content__product-name">Самый клевый чайник, который надо купить!</h3>
+            <div class="columns">
+              <div class="content__product-price">1 900 р.</div>
+              <a class="content__buy-btn" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </div>
+          <div class="content__card">
+            <img src="img/defaultphoto.jpg" alt="Фото товара" class="content__product-photo">
+            <h3 class="content__product-name">Самый клевый чайник, который надо купить!</h3>
+            <div class="columns">
+              <div class="content__product-price">1 900 р.</div>
+              <a class="content__buy-btn" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </div>
+          <div class="content__card">
+            <img src="img/defaultphoto.jpg" alt="Фото товара" class="content__product-photo">
+            <h3 class="content__product-name">Самый клевый чайник, который надо купить!</h3>
+            <div class="columns">
+              <div class="content__product-price">1 900 р.</div>
+              <a class="content__buy-btn" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </div>
+          <div class="content__card">
+            <img src="img/defaultphoto.jpg" alt="Фото товара" class="content__product-photo">
+            <h3 class="content__product-name">Самый клевый чайник, который надо купить!</h3>
+            <div class="columns">
+              <div class="content__product-price">1 900 р.</div>
+              <a class="content__buy-btn" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </div>
+          <div class="content__card">
+            <img src="img/defaultphoto.jpg" alt="Фото товара" class="content__product-photo">
+            <h3 class="content__product-name">Самый клевый чайник, который надо купить!</h3>
+            <div class="columns">
+              <div class="content__product-price">1 900 р.</div>
+              <a class="content__buy-btn" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <nav class="content__pagination">
+          <ul class="content__page-list">
+            <li class="content__page-item"><a href="#">1</a></li>
+            <li class="content__page-item"><a href="#">2</a></li>
+            <li class="content__page-item content__page-item_active"><a href="#">3</a></li>
+            <li class="content__page-item"><a href="#">4</a></li>
+            <li class="content__page-item"><a href="#">5</a></li>
+            <li class="content__page-item"><a href="#">6</a></li>
+            <li class="content__page-item"><a href="#">7</a></li>
+          </ul>
+        </nav>
+        <section class="content__about columns">
+          <div class="content__about-column">Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали
+            участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный
+            момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и
+            Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души. </div>
+          <div class="content__about-column">Одним из основных направлений работ нашей компании является поисковое
+            продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000
+            поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем
+            собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек
+            под
+            руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="inner">
+      <div class="footer__copyright">
+        © 2012–2013 ЗАО «Компания»<br />
+        <a href="mailto:info@name.ru">info@name.ru</a>
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="№">Главная</a></li>
+          <li class="footer__nav-item"><a href="№">Каталог</a></li>
+          <li class="footer__nav-item"><a href="№">Доставка и оплата</a></li>
+          <li class="footer__nav-item"><a href="№">Прайс-лист</a></li>
+          <li class="footer__nav-item"><a href="№">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="footer__developer">
+        <img src="img/pp_logo.png" alt="Логотип Пиксель Плюс" class="footer__dev-logo">
+        <span><a href="https://pixelplus.ru/" target="_blank">Разработка сайта</a> —<br>компания «Пиксель Плюс»</span>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/slider.js"></script>
+  <script src="./js/feedback.js"></script>
+</body>
+
+</html>
